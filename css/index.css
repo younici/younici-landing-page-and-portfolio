@@ -1,0 +1,128 @@
+body, html {
+    margin: 0;
+}
+
+html {
+    --border-radius: 0.7rem;
+    --main-bg-color: rgba(65,65,65, 0.2);
+    --border-color: rgba(65, 65, 65, 0.2);
+    --main-bg-dark-color: rgba(20,20,20, 0.2);
+    --box-shadow-dark-color: rgba(10, 10, 10, 0.6);
+    --active-btn-bg-color: rgba(27, 167, 217, 0.1);
+    --active-btn-box-shadow:rgba(27, 167, 217, 0.3);
+    --active-btn-border-color:rgba(27, 167, 217, 0.3);
+    --active-btn-text-color: rgba(255,255,255, 0.6);
+
+    min-height: 120vh;
+    color: rgba(150,150,150,0.8);
+
+    background-color: black;
+    background: black url(/images/first_bg.jpeg) center / cover no-repeat;
+}
+
+body {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0));
+}
+
+header, main, footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    padding-top: 1rem;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 9vh;
+    width: 90vw;
+    border-radius: var(--border-radius);
+}
+
+.header-container-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: var(--border-radius);
+    height: 7vh;
+    width: 85vw;
+}
+
+.header-btn {
+    width: 40vw;
+    height: 5vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--border-radius);
+}
+.header-btn:hover {
+    cursor: pointer;
+}
+
+main {
+
+}
+
+.container {
+    padding-top: 5vw;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+
+    width: 90vw;
+    height: 90vh;
+    border-radius: var(--border-radius);
+    .info-card {
+        /* background-color: red; */
+        width: 80vw;
+        height: 35vh;
+        border-radius: var(--border-radius);
+    }
+}
+
+footer {
+    padding-bottom: 1rem;
+}
+
+.footer-container {
+    height: 20vh;
+    width: 90vw;
+    border-radius: var(--border-radius);
+}
+
+.box {
+    background-color: var(--main-bg-color);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 0 2px var(--box-shadow-color);
+    box-shadow: inset 0 0 1px var(--box-shadow-color);
+}
+
+.blur {
+    backdrop-filter: blur(5px);
+}
+
+.dark-box {
+    background-color: var(--main-bg-dark-color);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 0 2px var(--box-shadow-dark-color);
+    box-shadow: inset 0 0 1px var(--box-shadow-dark-color);
+}
+
+.active {
+    background-color: var(--active-btn-bg-color);
+    color: var(--active-btn-text-color);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 0 2px var(--box-shadow-dark-color);
+    box-shadow: inset 0 0 1px var(--box-shadow-dark-color);
+}
