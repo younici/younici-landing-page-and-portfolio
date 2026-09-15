@@ -58,17 +58,17 @@ export const translations = {
     footer: {
       languageLabel: 'Language',
       languageAria: 'Choose language',
-      builtWith: 'Built with React · glass all the way down',
+      builtWith: 'Built with React',
       rights: 'All rights reserved',
     },
   },
 
   ru: {
-    docTitle: 'Костянтин Рекша (younici) — разработчик и портфолио',
+    docTitle: 'Константин Рекша (younici) — разработчик и портфолио',
     nav: { landing: 'Главная', portfolio: 'Портфолио', aria: 'Переключить раздел' },
     landing: {
       eyebrow: 'Привет, я',
-      name: 'Костянтин Рекша',
+      name: 'Константин Рекша',
       role: 'Разработчик',
       tagline:
         'Пишу телеграм-ботов, небольшие десктопные утилиты и веб-интерфейсы — в основном на Python, C# и JavaScript.',
@@ -114,7 +114,7 @@ export const translations = {
     footer: {
       languageLabel: 'Язык',
       languageAria: 'Выбрать язык',
-      builtWith: 'Сделано на React · стекло до самого низа',
+      builtWith: 'Сделано на React',
       rights: 'Все права защищены',
     },
   },
@@ -170,7 +170,7 @@ export const translations = {
     footer: {
       languageLabel: 'Мова',
       languageAria: 'Вибрати мову',
-      builtWith: 'Зроблено на React · скло аж до самого низу',
+      builtWith: 'Зроблено на React',
       rights: 'Усі права захищено',
     },
   },
