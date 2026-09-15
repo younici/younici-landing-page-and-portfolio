@@ -1,36 +1,168 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Younici - Landing Page</title>
-    <link rel="stylesheet" href="./css/index.css">
-    <script src="./src/main.js" defer></script>
-</head>
-<body>
-    <header>
-        <div class="header-container box blur" >
-            <div class="header-container-buttons">
-                <div class="header-btn box active" id="landBtn">
-                    <p>Landing Page</p>
-                </div>
-                <div class="header-btn box" id="portfolioBtn">
-                    <p>Portfolio</p>
-                </div>
-            </div>
-        </div>
-    </header>
-    <main>
-        <div class="container box blur">
-            <div class="info-card">
+<html lang="en" data-view="landing">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#05080f" />
+    <meta name="color-scheme" content="dark" />
 
-            </div>
-        </div>
-    </main>
-    <footer>
-        <div class="footer-container box blur">
+    <!-- ------------------------------------------------------------ search -->
+    <title>Kostiantyn Reksha (younici) — Developer &amp; Portfolio</title>
+    <meta
+      name="description"
+      content="Kostiantyn Reksha, also known as younici — developer. Telegram bots, desktop tools and web interfaces in Python, C# and JavaScript. Projects, contacts and links in one place."
+    />
+    <meta
+      name="keywords"
+      content="younici, Kostiantyn Reksha, Костянтин Рекша, Константин Рекша, real_younici, developer, portfolio, Python, C#, JavaScript, React, Telegram bots"
+    />
+    <meta name="author" content="Kostiantyn Reksha" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <link rel="canonical" href="https://younici.com/" />
 
-        </div>
-    </footer>
-</body>
+    <!-- identity links, also used by rel=me consumers -->
+    <link rel="me" href="https://github.com/younici" />
+    <link rel="me" href="https://www.instagram.com/real_younici" />
+
+    <!-- ----------------------------------------------------------- sharing -->
+    <meta property="og:type" content="profile" />
+    <meta property="og:site_name" content="younici.com" />
+    <meta property="og:url" content="https://younici.com/" />
+    <meta property="og:title" content="Kostiantyn Reksha (younici) — Developer &amp; Portfolio" />
+    <meta
+      property="og:description"
+      content="Developer. Telegram bots, desktop tools and web interfaces in Python, C# and JavaScript. Projects pulled live from GitHub."
+    />
+    <meta property="og:image" content="https://younici.com/og-image.jpg" />
+    <meta property="og:image:secure_url" content="https://younici.com/og-image.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Kostiantyn Reksha — younici — developer" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="uk_UA" />
+    <meta property="og:locale:alternate" content="ru_RU" />
+    <meta property="profile:first_name" content="Kostiantyn" />
+    <meta property="profile:last_name" content="Reksha" />
+    <meta property="profile:username" content="younici" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Kostiantyn Reksha (younici) — Developer &amp; Portfolio" />
+    <meta
+      name="twitter:description"
+      content="Developer. Telegram bots, desktop tools and web interfaces in Python, C# and JavaScript. Projects pulled live from GitHub."
+    />
+    <meta name="twitter:image" content="https://younici.com/og-image.jpg" />
+    <meta name="twitter:image:alt" content="Kostiantyn Reksha — younici — developer" />
+
+    <!-- --------------------------------------------------- structured data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "https://younici.com/#person",
+            "name": "Kostiantyn Reksha",
+            "alternateName": [
+              "younici",
+              "real_younici",
+              "Костянтин Рекша",
+              "Константин Рекша",
+              "Kostyantyn Reksha"
+            ],
+            "givenName": "Kostiantyn",
+            "familyName": "Reksha",
+            "jobTitle": "Developer",
+            "description": "Developer building Telegram bots, small desktop tools and web interfaces with Python, C# and JavaScript.",
+            "url": "https://younici.com/",
+            "mainEntityOfPage": "https://younici.com/",
+            "image": "https://younici.com/og-image.jpg",
+            "email": "mailto:kostantinreksha@gmail.com",
+            "knowsLanguage": ["uk", "ru", "en"],
+            "knowsAbout": [
+              "Python",
+              "C#",
+              "JavaScript",
+              "React",
+              "Telegram bots",
+              "Web development"
+            ],
+            "sameAs": [
+              "https://github.com/younici",
+              "https://www.linkedin.com/in/%D0%BA%D0%BE%D1%81%D1%82%D1%8F%D0%BD%D1%82%D0%B8%D0%BD-%D1%80%D0%B5%D0%BA%D1%88%D0%B0-494321373",
+              "https://www.instagram.com/real_younici"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://younici.com/#website",
+            "url": "https://younici.com/",
+            "name": "Kostiantyn Reksha — younici",
+            "alternateName": "younici",
+            "inLanguage": ["en", "uk", "ru"],
+            "about": { "@id": "https://younici.com/#person" },
+            "publisher": { "@id": "https://younici.com/#person" }
+          },
+          {
+            "@type": "ProfilePage",
+            "@id": "https://younici.com/#profilepage",
+            "url": "https://younici.com/",
+            "name": "Kostiantyn Reksha (younici) — Developer & Portfolio",
+            "isPartOf": { "@id": "https://younici.com/#website" },
+            "mainEntity": { "@id": "https://younici.com/#person" },
+            "primaryImageOfPage": "https://younici.com/og-image.jpg"
+          }
+        ]
+      }
+    </script>
+
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%234FBEFF'/%3E%3Cstop offset='1' stop-color='%23FFB44F'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='18' fill='url(%23g)'/%3E%3Ctext x='32' y='45' font-family='system-ui,sans-serif' font-size='36' font-weight='700' text-anchor='middle' fill='%23071019'%3EK%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://api.github.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- Readable content for crawlers and readers that do not run JavaScript.
+         Same facts as the rendered page, nothing hidden from users. -->
+    <noscript>
+      <h1>Kostiantyn Reksha — younici</h1>
+      <p>
+        Developer (Костянтин Рекша, @younici). I build Telegram bots, small desktop tools and web
+        interfaces — mostly with Python, C# and JavaScript.
+      </p>
+      <ul>
+        <li>Email: <a href="mailto:kostantinreksha@gmail.com">kostantinreksha@gmail.com</a></li>
+        <li>GitHub: <a rel="me" href="https://github.com/younici">github.com/younici</a></li>
+        <li>
+          LinkedIn:
+          <a
+            href="https://www.linkedin.com/in/%D0%BA%D0%BE%D1%81%D1%82%D1%8F%D0%BD%D1%82%D0%B8%D0%BD-%D1%80%D0%B5%D0%BA%D1%88%D0%B0-494321373"
+            >linkedin.com/in/kostiantyn-reksha</a
+          >
+        </li>
+        <li>
+          Instagram:
+          <a rel="me" href="https://www.instagram.com/real_younici">instagram.com/real_younici</a>
+        </li>
+        <li>Discord: <a href="https://discord.gg/avUNSNDv85">discord.gg/avUNSNDv85</a></li>
+      </ul>
+      <p>
+        Projects are loaded from the GitHub API — see
+        <a href="https://github.com/younici?tab=repositories">github.com/younici</a>.
+      </p>
+    </noscript>
+
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
