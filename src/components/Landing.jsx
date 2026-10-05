@@ -10,7 +10,6 @@ const PLATFORM_NAMES = {
   github: 'GitHub',
   linkedin: 'LinkedIn',
   instagram: 'Instagram',
-  discord: 'Discord',
   telegram: 'Telegram',
 }
 

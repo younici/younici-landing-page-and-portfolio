@@ -15,7 +15,6 @@ export const profile = {
       url: 'https://www.instagram.com/real_younici',
       handle: '@real_younici',
     },
-    { id: 'discord', url: 'https://discord.gg/avUNSNDv85', handle: 'discord.gg' },
     { id: 'telegram', url: 'https://t.me/younici', handle: '@younici' },
   ],
   // repos listed first, in this order (by name); everything else follows by activity
