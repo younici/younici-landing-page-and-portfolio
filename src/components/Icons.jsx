@@ -40,6 +40,12 @@ export const InstagramIcon = () => (
   </svg>
 )
 
+export const TelegramIcon = () => (
+  <svg {...common} fill="currentColor">
+    <path d="M12 .5C5.37.5 0 5.87 0 12.5S5.37 24.5 12 24.5s12-5.37 12-12S18.63.5 12 .5zm5.6 7.9-2.1 9.9c-.16.71-.58.88-1.17.55l-3.23-2.38-1.56 1.5c-.17.17-.32.32-.65.32l.23-3.3 6.02-5.44c.26-.23-.06-.36-.4-.13l-7.44 4.69-3.2-1c-.7-.22-.71-.7.15-1.03l12.5-4.82c.58-.21 1.09.14.85 1.14z" />
+  </svg>
+)
+
 export const MailIcon = () => (
   <svg {...common} {...line}>
     <rect x="2.6" y="4.6" width="18.8" height="14.8" rx="3.4" />
@@ -132,6 +138,7 @@ const REGISTRY = {
   linkedin: LinkedInIcon,
   discord: DiscordIcon,
   instagram: InstagramIcon,
+  telegram: TelegramIcon,
   mail: MailIcon,
 }
 

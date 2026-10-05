@@ -11,6 +11,7 @@ const PLATFORM_NAMES = {
   linkedin: 'LinkedIn',
   instagram: 'Instagram',
   discord: 'Discord',
+  telegram: 'Telegram',
 }
 
 export default function Landing({ github, onViewChange }) {
