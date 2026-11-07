@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# no crawl traps here — it is a single page
+Sitemap: https://younici.com/sitemap.xml
