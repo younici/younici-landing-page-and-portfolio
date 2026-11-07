@@ -17,7 +17,7 @@ export default function Landing({ github, onViewChange }) {
   const { t, plural, formatMonthYear, formatNumber } = useI18n()
   const [copied, flagCopied] = useFlag()
 
-  const age = useMemo(() => getAge(profile.birthDate), [])
+  // const age = useMemo(() => getAge(profile.birthDate), [])
   const user = github.user
   const repoCount = github.repos.length || user?.publicRepos || 0
   const joined = user?.createdAt ? new Date(user.createdAt) : null
@@ -71,6 +71,7 @@ export default function Landing({ github, onViewChange }) {
       <p className="landing__tagline">{t.landing.tagline}</p>
 
       <div className="landing__stats">
+        {/* TEMPORARILY HIDDEN: age
         <div className="stat surface gloss r-lg">
           <span className="stat__label">{t.landing.ageLabel}</span>
           <span className="stat__value">
@@ -78,6 +79,7 @@ export default function Landing({ github, onViewChange }) {
             <span className="stat__unit">{plural(age, t.landing.years)}</span>
           </span>
         </div>
+        */}
 
         <div className="stat surface gloss r-lg">
           <span className="stat__label">{t.landing.reposLabel}</span>
